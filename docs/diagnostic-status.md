@@ -46,3 +46,6 @@ Receive-only tests; do not press PTT or perform unintended TX. De-energize to re
 ## New UL measurement — 2026-10-14 19:38 local
 - User reports **PLL Unit J6 Pin 2 (UL) = 0.52 V DC while front panel shows dots**. Manual p.17 states UL becomes L on unlock. Conditional on verified J6 pin identification, this supports an asserted unlock report; exact electrical logic thresholds and individual loop source not yet isolated.
 - Next: compare J6 Pin 2 voltage during brief normal-frequency display if feasible, or check repeatability; no parts condemned.
+
+### UL comparison follow-up (2026-10-14)
+User reports J6 pin2 UL remains about **0.5 V even during the brief interval when normal frequency digits reappear**, versus 0.52 V during dots. Hence no observed DC UL state transition concurrent with display change; does not disprove unlock and does not isolate an individual PLL. Next discriminate source of low UL via manual schematic and individual PLL branches; verify precise connector pin orientation and compare DC with appropriate scope only if warranted.
