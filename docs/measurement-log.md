@@ -45,3 +45,5 @@ Source: user measurements and oscilloscope photos during conversation, 2026-10-1
 - Beware of input loading and poor trigger/autofrequency on mixed/noisy waveforms; use manual cursors or spectrum tools when appropriate.
 - Only infer broad frequency ranges and signal presence if RF snapshots were taken non-synchronously during PLL instability.
 - Preserve unsuccessful tests, caveats, and superseding measurements rather than rewriting them as confirmed faults.
+
+| PLL Unit J6 Pin 2 (UL) | HP 34401A DC, panel showing dots | **0.52 V**; observed lowish UL, verify pin orientation and normal-state comparison |
