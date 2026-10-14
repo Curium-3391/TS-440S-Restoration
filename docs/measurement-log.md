@@ -47,3 +47,5 @@ Source: user measurements and oscilloscope photos during conversation, 2026-10-1
 - Preserve unsuccessful tests, caveats, and superseding measurements rather than rewriting them as confirmed faults.
 
 | PLL Unit J6 Pin 2 (UL) | HP 34401A DC, panel showing dots | **0.52 V**; observed lowish UL, verify pin orientation and normal-state comparison |
+
+| PLL Unit J6 Pin 2 (UL) | DC while normal frequency briefly returns | **~0.5 V**, effectively same as ~0.52 V during dots; non-synchronous human observation, no distinct transition observed |
