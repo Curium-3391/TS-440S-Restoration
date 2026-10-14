@@ -49,3 +49,6 @@ Source: user measurements and oscilloscope photos during conversation, 2026-10-1
 | PLL Unit J6 Pin 2 (UL) | HP 34401A DC, panel showing dots | **0.52 V**; observed lowish UL, verify pin orientation and normal-state comparison |
 
 | PLL Unit J6 Pin 2 (UL) | DC while normal frequency briefly returns | **~0.5 V**, effectively same as ~0.52 V during dots; non-synchronous human observation, no distinct transition observed |
+
+| IC9 Pin 3 (corrected identification) | HP54503A; owner corrected previously misidentified Pin16 reading | **1.8 V DC, 8.94643 MHz auto-frequency**; reference approx 9 MHz, not feedback |
+| IC9 Pin 16 | — | **Not yet measured**; previous 1.8 V / 8.94643 MHz attribution retracted |
