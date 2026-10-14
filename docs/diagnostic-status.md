@@ -42,3 +42,7 @@ Last reviewed: 2026-10-14 (Taiwan local time). **In progress; fault not isolated
 
 ## Safety
 Receive-only tests; do not press PTT or perform unintended TX. De-energize to reposition a probe, avoid shorting adjacent IC pins, and avoid detuning T3–T12/T9 or other adjustments until evidence warrants it.
+
+## New UL measurement — 2026-10-14 19:38 local
+- User reports **PLL Unit J6 Pin 2 (UL) = 0.52 V DC while front panel shows dots**. Manual p.17 states UL becomes L on unlock. Conditional on verified J6 pin identification, this supports an asserted unlock report; exact electrical logic thresholds and individual loop source not yet isolated.
+- Next: compare J6 Pin 2 voltage during brief normal-frequency display if feasible, or check repeatability; no parts condemned.
