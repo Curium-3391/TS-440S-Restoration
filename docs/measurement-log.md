@@ -52,3 +52,18 @@ Source: user measurements and oscilloscope photos during conversation, 2026-10-1
 
 | IC9 Pin 3 (corrected identification) | HP54503A; owner corrected previously misidentified Pin16 reading | **1.8 V DC, 8.94643 MHz auto-frequency**; reference approx 9 MHz, not feedback |
 | IC9 Pin 16 | — | **Not yet measured**; previous 1.8 V / 8.94643 MHz attribution retracted |
+
+
+## 2026-10-20 follow-up (all dots/unlocked, radio nominally on 14 MHz)
+| Node | HP54503A setting | Observation |
+|---|---|---|
+| C70, IC7 side | 100 ns/div, x10 | Repeated undulations/noisy RF; auto-frequency 2.13191 MHz (NOT a spectral product identification) |
+| C70, T3 side | 200 ns/div, 50 mV/div, x10 | Obvious repeated oscillatory undulations; coupling node not entirely quiescent |
+| C71, T5 side | 200 ns/div, 50 mV/div, x10 | Narrow noisy band with intermittent downward spikes, no distinctly resolved continuous 6.6 MHz carrier |
+| C71, IC8 side | 200 ns/div, 50 mV/div, x10 | Similar narrow noise band, occasional spike, no distinctly resolved continuous 6.6 MHz carrier |
+| IC7 Pin1, MIX5 output | 20 ns/div, x10 | Smooth broad RF-scale undulation plus high-frequency noise; insufficient spectral discrimination |
+| IC7 Pin5, LO input | 100 ns/div, x10 | Periodic near-sine; scope auto-frequency **4.47321 MHz** (one capture) |
+| IC7 Pin2, RF input | 100 ns/div, x10 | Periodic near-sine; scope auto-frequency **1.95703 MHz** (later capture) |
+| IC7 Pin5, infinite persistence | 100 ns/div, x10 | Multiple acquisitions overlay periodic waveform with phase/amplitude spread; trigger/EMI/drift causes unresolved |
+
+User confirms 50 mV/div for comparative C70/C71 captures and persistent dots through these tests. PSU fan was spinning and may add spike interference. Pin5 and Pin2 measurements are asynchronous: do not claim the algebraic 6.43024 MHz sum was actually present or outside BPF. VCO or PLL lock cannot be diagnosed from these two numbers. Main tuning knob does not visibly change state while dots are shown. 14 MHz is radio setting, not expected IC7 Pin5 frequency. No board removal, coil alignment, or component substitution performed.
